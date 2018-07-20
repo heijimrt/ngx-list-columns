@@ -8,6 +8,11 @@
 # dependencies
 /node_modules
 
+/documentation
+/package-lock.json
+/projects/ngx-list-columns/node_modules
+/projects/ngx-list-columns/documentation
+
 # IDEs and editors
 /.idea
 .project

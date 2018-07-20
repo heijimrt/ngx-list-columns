@@ -1,0 +1,18 @@
+{
+  "name": "ngx-list-columns",
+  "version": "0.0.1",
+  "scripts": {
+    "compodoc": "./node_modules/.bin/compodoc -p ./tsconfig.lib.json",
+    "test": "ng test"
+  },
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "devDependencies": {
+    "@compodoc/compodoc": "^1.1.3"
+  },
+  "dependencies": {
+    "bulma": "^0.7.1"
+  }
+}
