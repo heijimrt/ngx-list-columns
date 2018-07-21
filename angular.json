@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-list-columns-example": {
+    "list-columns-example": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-list-columns-example",
+            "outputPath": "dist/list-columns-example",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-list-columns-example:build"
+            "browserTarget": "list-columns-example:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-list-columns-example:build:production"
+              "browserTarget": "list-columns-example:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-list-columns-example:build"
+            "browserTarget": "list-columns-example:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "ngx-list-columns-example-e2e": {
+    "list-columns-example-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngx-list-columns-example:serve"
+            "devServerTarget": "list-columns-example:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngx-list-columns-example:serve:production"
+              "devServerTarget": "list-columns-example:serve:production"
             }
           }
         },
@@ -131,13 +131,8 @@
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "outputPath": "dist/ngx-list-columns",
             "tsConfig": "projects/ngx-list-columns/tsconfig.lib.json",
-            "project": "projects/ngx-list-columns/ng-package.json",
-            "styles": [
-              "projects/ngx-list-columns/node_modules/bulma/css/bulma.min.css"
-            ],
-            "scripts": []
+            "project": "projects/ngx-list-columns/ng-package.json"
           },
           "configurations": {
             "production": {

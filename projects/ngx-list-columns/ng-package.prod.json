@@ -3,5 +3,8 @@
   "dest": "../../dist/ngx-list-columns",
   "lib": {
     "entryFile": "src/public_api.ts"
-  }
+  },
+  "whitelistedNonPeerDependencies": [
+    "bulma"
+  ]
 }

@@ -10,38 +10,25 @@ export class AppComponent {
   data = [
     {
       values: [
-        { label: 'dr suzane', value: 1  },
-        { label: 'CRM', value: 121312  },
-        { label: 'CRM2', value: 121312  },
-        { label: 'CRM3', value: 121312  },
-        { label: 'CRM4', value: 121312  },
-        { label: 'CRM5', value: 121312  },
-        { label: 'CRM6', value: 121312  },
+        { label: 'Maria', value: 'maria' },
+        { label: '27', value: 27 },
+        { label: 'Female', value: 'female' }
       ]
-    }, 
+    },
     {
       values: [
-        { label: 'Silva', value: 1  },
-        { label: '23', value: 555  },
-        { label: 'rei', value: 555  },
-        { label: 'tamar', value: 555  }
+        { label: 'angular', value: 1 },
+        { label: 'nodejs', value: 2 },
+        { label: 'react', value: 3 },
+        { label: 'vue', value: 4 }
       ]
-    }, 
+    },
     {
       values: [
-        { label: 'CRM', value: 121312  },
-        { label: 'CRM2', value: 121312  },
-        { label: 'CRM3', value: 121312  },
-        { label: 'CRM4', value: 121312  },
-        { label: 'CRM5', value: 121312  },
-        { label: 'CRM6', value: 121312  },
-        { label: 'CRM', value: 121312  },
-        { label: 'CRM2', value: 121312  },
-        { label: 'CRM3', value: 121312  },
-        { label: 'CRM4', value: 121312  },
-        { label: 'CRM5', value: 121312  },
-        { label: 'CRM6', value: 121312  },
+        { label: 1404, value: 1404 },
+        { label: 'John', value: 'John' },
+        { label: 'Director', value: 'director' }
       ]
-    }, 
+    },
   ];
 }

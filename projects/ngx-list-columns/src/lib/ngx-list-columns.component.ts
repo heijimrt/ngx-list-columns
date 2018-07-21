@@ -10,7 +10,7 @@ import { ListColumnsInsideDirective } from '../directives/list-columns-inside.di
 })
 export class NgxListColumnsComponent
 {
-  private searching: string;
+  public searching: string;
   /**
    * It receives an array of ListRow
    */
@@ -18,7 +18,7 @@ export class NgxListColumnsComponent
   @ContentChild(
     ListColumnsInsideDirective,
     { read: TemplateRef }
-  ) private listColumnsInsideTemplate;
+  ) public listColumnsInsideTemplate;
 
   /**
    * Receive search value to filter on list

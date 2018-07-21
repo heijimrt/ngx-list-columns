@@ -16,7 +16,7 @@ $ npm start
 
 ### Usage Example
 
-You can clone this project
+https://stackblitz.com/edit/ngx-list-columns-example
 
 ### Todos
  - Make tests
