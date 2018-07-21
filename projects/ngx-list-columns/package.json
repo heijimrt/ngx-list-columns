@@ -1,6 +1,6 @@
 {
   "name": "ngx-list-columns",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "compodoc": "./node_modules/.bin/compodoc -p ./tsconfig.lib.json",
     "test": "ng test"
@@ -14,5 +14,6 @@
   },
   "dependencies": {
     "bulma": "^0.7.1"
-  }
+  },
+  "homepage": "https://github.com/heijimrt/ngx-list-columns"
 }
