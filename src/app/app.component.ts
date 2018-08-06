@@ -12,7 +12,7 @@ export class AppComponent {
       values: [
         { label: 'Maria', value: 'maria' },
         { label: '27', value: 27 },
-        { label: 'Female', value: 'female' }
+        { label: 'Female', value: 'female' },
       ]
     },
     {

@@ -10,11 +10,13 @@ requires [Node.js](https://nodejs.org/) v8+ and angular-cli to run.
 Install the dependencies and devDependencies and start the server on development mode.
 
 ```sh
-$ npm install
+$ npm i ngx-list-columns --save
 $ npm start
 ```
 
 ### Usage Example
+
+`import { NgxListColumnsModule } from 'ngx-list-columns';`
 
 https://stackblitz.com/edit/ngx-list-columns-example
 

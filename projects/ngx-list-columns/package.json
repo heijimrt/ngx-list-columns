@@ -15,5 +15,6 @@
   "dependencies": {
     "bulma": "^0.7.1"
   },
-  "homepage": "https://github.com/heijimrt/ngx-list-columns"
+  "homepage": "https://github.com/heijimrt/ngx-list-columns",
+  "keywords": [ "angular", "list", "columns", "list columns" ]
 }

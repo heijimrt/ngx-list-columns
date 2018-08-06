@@ -10,11 +10,13 @@ import { ListColumnsInsideDirective } from '../directives/list-columns-inside.di
 })
 export class NgxListColumnsComponent
 {
-  public searching: string;
   /**
    * It receives an array of ListRow
    */
   @Input() public data: Array<ListRow>;
+  @Input() public searching: string;
+  @Input() public responsive: string = 'is-mobile';
+  @Input() public enableSearch: boolean = true;
   @ContentChild(
     ListColumnsInsideDirective,
     { read: TemplateRef }
@@ -22,8 +24,8 @@ export class NgxListColumnsComponent
 
   /**
    * Receive search value to filter on list
-   * 
-   * @param event 
+   *
+   * @param event
    */
   public receiveSearch(event)
   {

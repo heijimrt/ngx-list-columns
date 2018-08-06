@@ -1,10 +1,12 @@
 <div class="list-wrapper">
 
-  <ngx-list-columns-search (notify)="receiveSearch($event)"></ngx-list-columns-search>
+  <ngx-list-columns-search *ngIf="enableSearch"
+    (notify)="receiveSearch($event)">
+  </ngx-list-columns-search>
 
   <ul class="list-columns-container">
     <li *ngFor="let items of data" class="list-columns-row">
-      <div class="columns">
+      <div class="columns {{ responsive }}">
         <div *ngFor="let value of items?.values | filter:searching; let i = index" class="inside-listing column">
           <div class="list-columns-cell-content">
 
