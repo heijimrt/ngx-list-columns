@@ -31,4 +31,9 @@ export class AppComponent {
       ]
     },
   ];
+
+  public receivingData(event)
+  {
+    alert(JSON.stringify(event));
+  }
 }

@@ -1,4 +1,7 @@
-import { Component, Input, TemplateRef, ContentChild } from '@angular/core';
+import {
+  Component, Input, TemplateRef,
+  ContentChild, Output, EventEmitter
+} from '@angular/core';
 import { ListRow } from '../models/ListRow';
 import { ListColumnsInsideDirective } from '../directives/list-columns-inside.directive';
 
@@ -17,6 +20,7 @@ export class NgxListColumnsComponent
   @Input() public searching: string;
   @Input() public responsive: string = 'is-mobile';
   @Input() public enableSearch: boolean = true;
+  @Output() public dataNotifier: EventEmitter<Object[]> = new EventEmitter();
   @ContentChild(
     ListColumnsInsideDirective,
     { read: TemplateRef }
@@ -30,5 +34,13 @@ export class NgxListColumnsComponent
   public receiveSearch(event)
   {
     this.searching = event;
+  }
+
+  /**
+   * Emit selected item
+   */
+  public onSelected(item: Object[]): void
+  {
+    this.dataNotifier.emit(item);
   }
 }

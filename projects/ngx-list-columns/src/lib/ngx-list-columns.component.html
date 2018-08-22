@@ -6,7 +6,7 @@
 
   <ul class="list-columns-container">
     <li *ngFor="let items of data" class="list-columns-row">
-      <div class="columns {{ responsive }}">
+      <div class="columns {{ responsive }}" (click)="onSelected(items)">
         <div *ngFor="let value of items?.values | filter:searching; let i = index" class="inside-listing column">
           <div class="list-columns-cell-content">
 

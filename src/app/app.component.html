@@ -1,4 +1,4 @@
-<ngx-list-columns [data]="data">
+<ngx-list-columns [data]="data" (dataNotifier)="receivingData($event)">
 
     <ng-template
         list-columns-inside
